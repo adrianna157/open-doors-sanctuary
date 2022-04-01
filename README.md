@@ -5,3 +5,6 @@ The idea is to create a web app (desktop and mobile) that will allow fleeing Ukr
 1) Run npm i
 2) Run npm run start to start server and hot reloading
 
+# Amplify Team Workflow
+
+look at links in Team Run Book
