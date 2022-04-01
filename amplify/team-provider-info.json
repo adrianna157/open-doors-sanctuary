@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-opendoorssanctuary-dev-110419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::332565015999:role/amplify-opendoorssanctuary-dev-110419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::332565015999:role/amplify-opendoorssanctuary-dev-110419-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-opendoorssanctuary-dev-110419-deployment",
+      "UnauthRoleName": "amplify-opendoorssanctuary-dev-110419-unauthRole",
+      "StackName": "amplify-opendoorssanctuary-dev-110419",
+      "StackId": "arn:aws:cloudformation:us-west-2:332565015999:stack/amplify-opendoorssanctuary-dev-110419/5465dfe0-adf8-11ec-a959-06039fb616cf",
+      "AmplifyAppId": "d2m1v8pelizlx3"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2m1v8pelizlx3",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
