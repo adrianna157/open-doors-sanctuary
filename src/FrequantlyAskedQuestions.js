@@ -1,18 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import Question from "./Question";
+import questions from './faq.json'
 
 export default function FrequantlyAskedQuestions() {
 
-    let questions = ['question1', 'question2'];
     // TODO get @questions from DB or somewhere else
-
     return (
         <div className="centerized">
             {/* TODO add styles of common text */}
-            <h1>Frequntly asked questions</h1>
+            <h1 className="main-faq-title">Frequntly asked questions</h1>
             {questions.map((question) => {
-                return <Question>{question}</Question>
+                return <Question className="centerized" 
+                        key={question.id}
+                    >{question}</Question>
             })}
+            <h2>Have additional questions?</h2>
         </div>
     );
 }
