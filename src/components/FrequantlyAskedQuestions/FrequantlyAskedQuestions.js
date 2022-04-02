@@ -1,10 +1,9 @@
 import React, {useState} from "react";
-import questions from '../../faq.json'
+import questions from '../../assets/data/faq.json'
 import Question from "../Question/Question";
 
 export default function FrequantlyAskedQuestions() {
 
-    // TODO get @questions from DB or somewhere else
     return (
         <div className="centerized">
             {/* TODO add styles of common text */}
@@ -12,7 +11,7 @@ export default function FrequantlyAskedQuestions() {
             {questions.map((question) => {
                 return <Question className="centerized" 
                         key={question.id}
-                    >{question}</Question>
+                >{question}</Question>
             })}
             <h2>Have additional questions?</h2>
         </div>
