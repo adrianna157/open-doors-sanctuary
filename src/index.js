@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HostingList from './HostingList';
+import hosts from './assets/data/hosts.json'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HostingList>{hosts}</HostingList>
   </React.StrictMode>,
   document.getElementById('root')
 );

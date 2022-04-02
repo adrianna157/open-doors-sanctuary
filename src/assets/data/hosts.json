@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "House", 
+        "location": "Kyiv",
+        "description": "something interesting",
+        "short-term": false,
+        "long-term": false,
+        "kid-friedly": true,
+        "pet-friendly": true,
+        "activated": true
+    },
+    {
+        "id": 2,
+        "title": "House", 
+        "location": "Kyiv",
+        "description": "something interesting",
+        "short-term": false,
+        "long-term": false,
+        "kid-friedly": true,
+        "pet-friendly": true,
+        "activated": true
+    },
+    {
+        "id": 3,
+        "title": "House", 
+        "location": "Kyiv",
+        "description": "something interesting",
+        "short-term": false,
+        "long-term": false,
+        "kid-friedly": true,
+        "pet-friendly": true,
+        "activated": true
+    },
+    {
+        "id": 4,
+        "title": "House", 
+        "location": "Kyiv",
+        "description": "something interesting",
+        "short-term": false,
+        "long-term": false,
+        "kid-friedly": true,
+        "pet-friendly": true,
+        "activated": true
+    },
+    {
+        "id": 5,
+        "title": "House", 
+        "location": "Kyiv",
+        "description": "something interesting",
+        "short-term": false,
+        "long-term": false,
+        "kid-friedly": true,
+        "pet-friendly": true,
+        "activated": true
+    }
+]
