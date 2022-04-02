@@ -13,12 +13,7 @@
     },
     "categories": {
       "auth": {
-        "opendoorssanctuarybud6e55439": {
-          "userPoolId": "us-west-1_pPbIYB4NC",
-          "userPoolName": "amplify_backend_manager_ddpeo76hktjve",
-          "webClientId": "3j87ruba45mlhmukk402h7qctf",
-          "nativeClientId": "3j87ruba45mlhmukk402h7qctf"
-        }
+        "opendoorssanctuarybu81ca5736": {}
       }
     }
   }

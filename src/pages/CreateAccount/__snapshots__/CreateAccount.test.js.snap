@@ -1,0 +1,452 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The CreateAccount Page Renders Correctly Should Render CreateAccount Page Component Page 1 1`] = `
+<div
+  className="h-screen lg:h-auto lg:overflow-hidden  pb-6 mb-6"
+>
+  <div>
+    <div
+      className=" inset-y-h12pr -z-10 fixed  content-center flex-wrap h-46pr bg-no-repeat bg-cover bg-scroll w-screen bg-none  lg:flex lg:justify-center lg:bg-coin "
+    />
+    <div
+      className="lg:flex lg:justify-center w-full"
+    >
+      <nav
+        className="h-6pr bg-white fixed top-0 left-0 w-screen justify-center flex shadow-lg lg:h-12pr lg:justify-between lg:shadow-none"
+      >
+        <section
+          className="h-4pr my-h08pr lg:flex lg:h-10pr lg:p-1"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="Open Doors Sanctuary"
+              className="h-4pr lg:h-10pr lg:ml-w05pr"
+              src="guardian_group_logo.svg"
+            />
+          </a>
+        </section>
+      </nav>
+      <div
+        className="bg-white shadow-container lg:shadow-xl  w-96pr lg:w-35pr h-91pr lg:h-63pr mt-h8pr lg:mt-h26pr mx-auto rounded z-40 relative"
+      >
+        <div
+          className="h-full standard-text-font container-shadow  pt-3pr px-4pr flex flex-col"
+        >
+          <center>
+            <div
+              className="mb-2 primary-blue-text font-display text-4xl pb-2pr"
+            >
+              Create an Account
+            </div>
+          </center>
+          <div>
+            <div
+              className="w-full mb-4"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  First Name
+                </p>
+
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="First Name"
+                value=""
+              />
+            </div>
+            <div
+              className="w-full mb-4"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  Last Name
+                </p>
+
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="Last Name"
+                value=""
+              />
+            </div>
+            <div
+              className="w-full mb-4"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  Email
+                </p>
+
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="Email"
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              className="w-full mb-4"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  Password
+                </p>
+                <div
+                  className="relative flex items-center"
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <div
+                    className="absolute whitespace-no-wrap primary-solid-blue to-gray-700 text-white px-4 py-2 rounded flex items-center transition-all duration-150"
+                    style={
+                      Object {
+                        "left": "10%",
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <div
+                      className="primary-solid-blue h-3 w-3 absolute"
+                      style={
+                        Object {
+                          "left": "-6px",
+                          "transform": "rotate(45deg)",
+                        }
+                      }
+                    />
+                    Your password must be 12 characters long, have at least one number, one upper case, one lower case, and one special character
+                  </div>
+                  <svg>
+                    information.svg
+                  </svg>
+                </div>
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              className="w-full mb-4pr"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  Confirm Password
+                </p>
+
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="Password"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              className="flex justify-between mb-h2pr"
+            >
+              <button
+                className="btton primary-lined-blue w-20pr lg:w-6pr"
+                onClick={[Function]}
+              >
+                CANCEL
+              </button>
+              <button
+                className="btton primary-solid-blue w-20pr lg:w-6pr"
+                onClick={[Function]}
+              >
+                NEXT
+              </button>
+            </div>
+            <p
+              className="flex justify-end mt-2 primary-blue-text"
+            >
+              Already have an account? 
+              <button
+                className="underline primary-blue-text"
+                onClick={[Function]}
+              >
+                Click Here
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container-grayed "
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The CreateAccount Page Renders Correctly Should Render CreateAccount Page Component Page 2 1`] = `
+<div
+  className="h-screen lg:h-auto lg:overflow-hidden  pb-6 mb-6"
+>
+  <div>
+    <div
+      className=" inset-y-h12pr -z-10 fixed  content-center flex-wrap h-46pr bg-no-repeat bg-cover bg-scroll w-screen bg-none  lg:flex lg:justify-center lg:bg-coin "
+    />
+    <div
+      className="lg:flex lg:justify-center w-full"
+    >
+      <nav
+        className="h-6pr bg-white fixed top-0 left-0 w-screen justify-center flex shadow-lg lg:h-12pr lg:justify-between lg:shadow-none"
+      >
+        <section
+          className="h-4pr my-h08pr lg:flex lg:h-10pr lg:p-1"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="Open Doors Sanctuary"
+              className="h-4pr lg:h-10pr lg:ml-w05pr"
+              src="guardian_group_logo.svg"
+            />
+          </a>
+        </section>
+      </nav>
+      <div
+        className="bg-white shadow-container lg:shadow-xl  w-96pr lg:w-35pr h-91pr lg:h-63pr mt-h8pr lg:mt-h26pr mx-auto rounded z-40 relative"
+      >
+        <div
+          className="h-full standard-text-font container-shadow  pt-3pr px-4pr flex flex-col"
+        >
+          <center>
+            <div
+              className="mb-2 primary-blue-text font-display text-4xl pb-2pr"
+            >
+              Create an Account
+            </div>
+          </center>
+          <div>
+            <div
+              className="w-full mb-4"
+            >
+              <div
+                className="flex"
+              >
+                <p
+                  className="light-primary-blue-text font-light mb-1"
+                >
+                  Birth Year
+                </p>
+
+              </div>
+              <input
+                className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+                onChange={[Function]}
+                placeholder="YYYY"
+                value=""
+              />
+            </div>
+            <div
+              className="w-full mb-4"
+            >
+              <p
+                className="light-primary-blue-text font-light mb-1"
+              >
+                Country
+              </p>
+              <div
+                className="w-full rounded h-4pr css-2b097c-container"
+                onKeyDown={[Function]}
+              >
+                <span
+                  aria-atomic="false"
+                  aria-live="polite"
+                  aria-relevant="additions text"
+                  className="css-1f43avz-a11yText-A11yText"
+                />
+                <div
+                  className=" css-yk16xz-control"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <div
+                    className=" css-g1d714-ValueContainer"
+                  >
+                    <div
+                      className=" css-1wa3eu0-placeholder"
+                    >
+                      Select...
+                    </div>
+                    <div
+                      className="css-b8ldur-Input"
+                    >
+                      <div
+                        className=""
+                        style={
+                          Object {
+                            "display": "inline-block",
+                          }
+                        }
+                      >
+                        <input
+                          aria-autocomplete="list"
+                          autoCapitalize="none"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          disabled={false}
+                          id="react-select-2-input"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onFocus={[Function]}
+                          spellCheck="false"
+                          style={
+                            Object {
+                              "background": 0,
+                              "border": 0,
+                              "boxSizing": "content-box",
+                              "color": "inherit",
+                              "fontSize": "inherit",
+                              "label": "input",
+                              "opacity": 1,
+                              "outline": 0,
+                              "padding": 0,
+                              "width": "1px",
+                            }
+                          }
+                          tabIndex="0"
+                          type="text"
+                          value=""
+                        />
+                        <div
+                          style={
+                            Object {
+                              "height": 0,
+                              "left": 0,
+                              "overflow": "scroll",
+                              "position": "absolute",
+                              "top": 0,
+                              "visibility": "hidden",
+                              "whiteSpace": "pre",
+                            }
+                          }
+                        >
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className=" css-1hb7zxy-IndicatorsContainer"
+                  >
+                    <span
+                      className=" css-1okebmr-indicatorSeparator"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className=" css-tlfecz-indicatorContainer"
+                      onMouseDown={[Function]}
+                      onTouchEnd={[Function]}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="css-tj5bde-Svg"
+                        focusable="false"
+                        height={20}
+                        viewBox="0 0 20 20"
+                        width={20}
+                      >
+                        <path
+                          d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="flex justify-start my-3pr"
+            >
+              <div
+                className="w-5"
+              >
+                <div
+                  className="flex"
+                >
+
+
+                </div>
+                <input
+                  checked={false}
+                  className="textfield-bg-color py-h3pr lg:py-h1pr h-5 w-5 pl-4"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+              </div>
+              <p
+                className="mx-2 primary-blue-text"
+              >
+                I agree to the 
+                <button
+                  className="underline primary-blue-text"
+                  onClick={[Function]}
+                >
+                  Terms of Use
+                </button>
+              </p>
+            </div>
+            <div
+              className="flex justify-between mt-h4pr"
+            >
+              <button
+                className="btton primary-lined-blue w-20pr lg:w-6pr"
+                onClick={[Function]}
+              >
+                CANCEL
+              </button>
+              <button
+                className="btton primary-solid-blue w-20pr lg:w-6pr"
+                onClick={[Function]}
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container-grayed "
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The CreateAccount Page Renders Correctly Should not Render CreateAccount Page Component 1`] = `null`;
