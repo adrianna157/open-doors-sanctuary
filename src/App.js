@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Authenticator } from "aws-amplify-react";
+import Login from "./pages/Login";
+import SignedIn from "./pages/SignedIn";
+import CreateAccount from "./pages/CreateAccount";
+import ConfirmAccount from "./pages/ConfirmAccount";
+import AuthStore from "./helpers/AuthContext/AuthContext.js";
+import AlertStore from "./helpers/AlertContext/AlertContext.js";
+import ForgotPassword from "./pages/ForgotPassword";
 
-function App() {
+const AuthStateApp = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-3xl font-bold underline">Open Doors Sanctuary</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthStore>
+      <AlertStore>
+        <Authenticator hideDefault={true}>
+          <SignedIn override={"SignedIn"} />
+          <Login override={"SignIn"} />
+          <CreateAccount override={"SignUp"} />
+          <ConfirmAccount override={"ConfirmSignUp"} />
+          <ForgotPassword override={"ForgotPassword"} />
+        </Authenticator>
+      </AlertStore>
+    </AuthStore>
   );
-}
+};
 
-export default App;
+export default AuthStateApp;
