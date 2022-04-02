@@ -5,7 +5,7 @@ export default function hostingList(hostSummaries) {
 
     return (
         <>
-            <div>
+            <div className='grids-for-list'>
                 {hostSummaries.children.map((host) => {
                     return <HostShortForm key={host.id}>{host}</HostShortForm>
                 })}
