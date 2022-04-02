@@ -71,7 +71,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  background-color: grey;
+  background-color: white;
+  border: 0.7px solid #aeaeae;
+  border-radius: 10px;
 }
 
 .close-in-preview {
