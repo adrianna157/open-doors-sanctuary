@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Answer from "./Answer";
-import open from './resources/open.png'
-import close from './resources/close.png'
+import open from '../../assets/Images/open.png'
+import close from '../../assets/Images/close.png'
 
 export default function Question(question) {
     const [showAnswer, setShowAnswer] = useState(false);

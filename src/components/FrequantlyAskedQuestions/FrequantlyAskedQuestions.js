@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Question from "./Question";
-import questions from './faq.json'
+import questions from '../../faq.json'
+import Question from "../Question/Question";
 
 export default function FrequantlyAskedQuestions() {
 
