@@ -7,17 +7,6 @@ import ConfirmAccount from "./pages/ConfirmAccount";
 import AuthStore from "./helpers/AuthContext/AuthContext.js";
 import AlertStore from "./helpers/AlertContext/AlertContext.js";
 import ForgotPassword from "./pages/ForgotPassword";
-// import { BrowserRouter, Routes, Route } from "react-router-dom"
-// import Layout from "./views/Layout";
-// import TitleScreen from "./views/TitleScreen";
-// import About from "./views/About";
-// import LoginHost from "./views/LoginHost";
-// import LoginRefugee from "./views/LoginRefugee";
-// import Dashboard from "./views/Dashboard";
-// import GuestList from "./views/GuestList";
-// import NotFound from "./views/NotFound";
-// import CreateGuestAccount from "./views/CreateGuestAccount";
-// import BecomeHost from "./views/BecomeHost";
 
 
 const AuthStateApp = (props) => {
