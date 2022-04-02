@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Tag from './Tag';
+import DetailedPreview from './DetailedPreview';
 
 export default function HostShortForm(host) {
+    const [detailedPreview, setDetailedPreview] = useState(false)
+
+    const close = () => {
+        setDetailedPreview(false);
+    }
+
     return (
         <>
-            <div className='hostShortType'>
+            <div className='hostShortType' onClick={() => setDetailedPreview(true)}>
                 <h1 className='title'>{host.children.title}</h1>
                 <h2 className='location'>{host.children.location}</h2>
                 <div className='container'>
@@ -14,6 +21,8 @@ export default function HostShortForm(host) {
                     { host.children.pet_friendly ? <Tag>Pets</Tag> : null}
                 </div>
             </div>
+
+            {detailedPreview && <DetailedPreview onClick={close} host={host}/>}
         </>
     );
 }

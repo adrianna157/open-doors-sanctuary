@@ -38,6 +38,8 @@
   border-radius: 10px;
   text-align: center;
   line-height: 30px;
+
+  background-color: #f3f3f3;
 }
 
 .container {
@@ -56,5 +58,24 @@
   grid-template-rows: 250px;
   /* margin-left: 1.5em; */
   margin-top: 10px;
-  margin-left: 9em;
+  margin-left: 13em;
+}
+
+.preview {
+  position: absolute;
+  width: 600px;
+  height: 800px;
+  border: 0.7px solid #aeaeae;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: grey;
+}
+
+.close-in-preview {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
 }
