@@ -8,7 +8,7 @@ module.exports = {
               hacky: {
                   50: "#9daaa2",
                   100: "#ced4d0",
-                  200: "#9dafa2"
+                  200: "#A26360"
               },
               secondary: "#a56865"
           }
