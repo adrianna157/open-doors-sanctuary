@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HostingList from './componenets/HostingList/HostingList';
-import hosts from './assets/data/hosts.json'
+// import hosts from './assets/data/hosts.json'
 
 ReactDOM.render(
   <React.StrictMode>
-    <HostingList>{hosts}</HostingList>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
