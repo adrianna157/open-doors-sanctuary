@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The CreateAccount Page Renders Correctly Should Render ConfirmAccount Page Component 1`] = `
+<div
+  className="h-screen lg:h-auto lg:overflow-hidden  pb-6 mb-6"
+>
+  <div>
+    <div
+      className=" inset-y-h12pr -z-10 fixed  content-center flex-wrap h-46pr bg-no-repeat bg-cover bg-scroll w-screen bg-none  lg:flex lg:justify-center lg:bg-coin "
+    />
+    <div
+      className="lg:flex lg:justify-center w-full"
+    >
+      <nav
+        className="h-6pr bg-white fixed top-0 left-0 w-screen justify-center flex shadow-lg lg:h-12pr lg:justify-between lg:shadow-none"
+      >
+        <section
+          className="h-4pr my-h08pr lg:flex lg:h-10pr lg:p-1"
+        >
+          <a
+            href="/"
+          >
+            <img
+              alt="Open Doors Sanctuary"
+              className="h-4pr lg:h-10pr lg:ml-w05pr"
+              src="guardian_group_logo.svg"
+            />
+          </a>
+        </section>
+      </nav>
+      <div
+        className="bg-white shadow-container lg:shadow-xl  w-96pr lg:w-35pr h-91pr lg:h-63pr mt-h8pr lg:mt-h26pr mx-auto rounded z-40 relative"
+      >
+        <div
+          className="h-full standard-text-font container-shadow  pt-3pr px-4pr flex flex-col"
+        >
+          <center>
+            <div
+              className="mb-2 primary-blue-text font-display text-4xl pb-2pr"
+            >
+              Confirm Sign Up
+            </div>
+          </center>
+          <div
+            className="w-full"
+          >
+            <div
+              className="flex"
+            >
+              <p
+                className="light-primary-blue-text font-light mb-1"
+              >
+                Confirmation Code
+              </p>
+
+            </div>
+            <input
+              className="textfield-bg-color py-h3pr lg:py-h1pr w-full rounded h-4pr pl-4"
+              onChange={[Function]}
+              placeholder="Code"
+              type="code"
+              value=""
+            />
+          </div>
+          <button
+            className="btton primary-solid-blue mt-4"
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+          <div
+            className="flex justify-end mt-4"
+          >
+            <button
+              className="underline primary-blue-text"
+              onClick={[Function]}
+            >
+              Resend Code
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className="container-grayed "
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The CreateAccount Page Renders Correctly Should not Render ConfirmAccount Page Component 1`] = `null`;
