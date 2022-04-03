@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "./assets/main.css";
 import App from './App';
+import { AuthProvider } from './auth/AuthProvider';
 import reportWebVitals from './reportWebVitals';
-import FrequantlyAskedQuestions from './components/FrequantlyAskedQuestions/FrequantlyAskedQuestions'
+import Amplify from "@aws-amplify/core";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <FrequantlyAskedQuestions />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
