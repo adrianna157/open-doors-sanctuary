@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import Tag from './Tag';
-import DetailedPreview from './DetailedPreview';
+import Tag from '../DetailedHostPreview/Tag';
+import DetailedPreview from '../DetailedHostPreview/DetailedPreview';
 
 export default function HostShortForm(host) {
     const [detailedPreview, setDetailedPreview] = useState(false)

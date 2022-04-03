@@ -1,5 +1,5 @@
 import React from 'react'
-import close from './assets/Images/close.png'
+import close from '../../assets/Images/close.png'
 
 export default function DetailedPreview({onClick, host}) {
 // TODO blurring

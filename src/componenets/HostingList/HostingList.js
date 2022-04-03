@@ -1,5 +1,5 @@
 import React from 'react'
-import HostShortForm from './HostShortForm';
+import HostShortForm from '../ShortHostPriview/HostShortForm';
 
 export default function hostingList(hostSummaries) {
     return (

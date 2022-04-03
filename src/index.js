@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HostingList from './HostingList';
+import HostingList from './componenets/HostingList/HostingList';
 import hosts from './assets/data/hosts.json'
 
 ReactDOM.render(
