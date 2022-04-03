@@ -30,7 +30,7 @@
   margin-top: 0.5em;
 }
 
-.tag {
+.shortTag {
   width: 80px;
   height: 35px;
   font-size: 15px;
@@ -40,6 +40,25 @@
   line-height: 30px;
 
   background-color: #f3f3f3;
+}
+
+.longTag {
+  width: 180px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #aeaeae;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.container-long-tag {
+  display: grid;
+  grid-template-columns: 180px 180px 180px; 
+  grid-template-rows: 70px;
+  grid-column-gap: 10px;
+  margin-left: 0.9em;
 }
 
 .container {
@@ -64,7 +83,7 @@
 .preview {
   position: absolute;
   width: 600px;
-  height: 800px;
+  height: 820px;
   border: 0.7px solid #aeaeae;
 
   left: 50%;
@@ -80,4 +99,39 @@
   width: 40px;
   height: 40px;
   margin: 10px;
+}
+
+.titleInDetailedPreview {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  text-indent: 1.3em;
+}
+
+.descriptionInDetailedPreview {
+  width: auto;
+  height: 200px;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 1em;
+}
+
+.infoButtonInDetailedPreview {
+  height: 50px;
+
+  background: #9AACA2;
+  border: 1px solid #8E9A93;
+  box-sizing: border-box;
+  box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+
+  text-align: center;
+  line-height: 45px;
+
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  margin-top: 20px;
 }

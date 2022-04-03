@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Tag(tag) {
+export default function LongTag(tag) {
     return (
-        <div className='tag tag-blocks'>
+        <div className='longTag'>
             {tag.children}
         </div>
     );

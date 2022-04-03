@@ -2,6 +2,8 @@
     {
         "id": 1,
         "title": "House", 
+        "email": "test.email@email.com",
+        "phone": "1234567890",
         "location": "Kyiv",
         "description": "something interesting",
         "short_term": false,
@@ -13,6 +15,8 @@
     {
         "id": 2,
         "title": "Title Test", 
+        "email": "test.email@email.com",
+        "phone": "1234567890",
         "location": "Krakow",
         "description": "something interesting",
         "short_term": true,
@@ -24,8 +28,10 @@
     {
         "id": 3,
         "title": "Cozy room", 
+        "email": "test.email@email.com",
+        "phone": "1234567890",
         "location": "NY",
-        "description": "something interesting",
+        "description": "Here will be described everying that should be taken into account and something interesting",
         "short_term": true,
         "long_term": false,
         "kid_friedly": true,
@@ -34,7 +40,9 @@
     },
     {
         "id": 4,
-        "title": "Test Title ", 
+        "title": "Test Title ",
+        "email": "test.email@email.com",
+        "phone": "1234567890",
         "location": "England",
         "description": "something interesting",
         "short_term": true,
@@ -46,6 +54,8 @@
     {
         "id": 5,
         "title": "Some things", 
+        "email": "test.email@email.com",
+        "phone": "1234567890",
         "location": "Berlin",
         "description": "something interesting",
         "short_term": true,
