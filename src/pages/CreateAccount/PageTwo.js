@@ -1,31 +1,38 @@
-import React, { useContext } from "react"
-import { validatePageTwo } from '../../helpers/createAccount/createAccountValidation.js'
-import HeaderText from '../../components/HeaderText'
-import Button from '../../components/Button'
-import TextField from '../../components/TextField'
-import Page from '../../components/Page'
-import Container from '../../components/Container'
-import AuthHeader from '../../components/AuthHeader'
-import DropDown from '../../components/DropDown'
+import React, { useState, Fragment, useContext } from "react";
+import { validatePageTwo } from "../../helpers/createAccount/createAccountValidation.js";
+import HeaderText from "../../components/HeaderText";
+import Button from "../../components/Button";
+import TextField from "../../components/TextField";
+import Page from "../../components/Page";
+import Container from "../../components/Container";
+import { useNavigate } from "react-router-dom";
+import DropDown from "../../components/Dropdown";
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
-import AlertHandler from "../../components/AlertHandler/index.js"
+import AlertHandler from "../../components/AlertHandler/index.js";
 
 const PageTwo = (props) => {
   const [alert, setAlert] = useContext(NotificationContext);
-
+  let navigate = useNavigate();
   let {
-    birthYear, setBirthYear,
-    location, setLocation,
-    agreeToTerms, setAgreeToTerms,
-    pageChange, signUp,
-    setFirstName, setLastName,
-    setEmail, setPassword,
+    birthYear,
+    setBirthYear,
+    location,
+    setLocation,
+    agreeToTerms,
+    setAgreeToTerms,
+    pageChange,
+    signUp,
+    setFirstName,
+    setLastName,
+    setEmail,
+    setPassword,
     setConfirmPassword,
-    country, setCountry
-  } = props
+    country,
+    setCountry,
+  } = props;
 
   const stateDropDownConditionalRender = () => {
-    if (country.value === "US")  {
+    if (country.value === 'US') {
       return (
         <DropDown
           USAStates
@@ -34,16 +41,13 @@ const PageTwo = (props) => {
           label="State"
           className="mb-4"
         />
-      )
+      );
     }
-  }
-
-
+  };
 
   return (
     <Page noLeftMargin>
       <AlertHandler />
-      <AuthHeader />
       <Container
         grayedBackground
         height="md:h-[32rem] sm:h-1/6 lg:h-63pr"
@@ -54,7 +58,7 @@ const PageTwo = (props) => {
         mariginTop="mt-24 lg:mt-h26pr"
       >
         <center>
-          <HeaderText noBold fontSize="text-4xl" className="pb-2pr">
+          <HeaderText noBold fontSize="text-4xl" className="pb-2pr text-[#a26360]">
             Create an Account
           </HeaderText>
         </center>
@@ -101,7 +105,7 @@ const PageTwo = (props) => {
           </div>
           <div className="flex justify-between mt-h4pr">
             <Button
-              linedBlue
+              solidGreen
               noPadding
               className="w-20pr lg:w-6pr"
               onClick={() => {
@@ -120,7 +124,7 @@ const PageTwo = (props) => {
               CANCEL
             </Button>
             <Button
-              solidBlue
+              solidGreen
               noPadding
               className="w-20pr lg:w-6pr"
               onClick={() => {
@@ -134,7 +138,7 @@ const PageTwo = (props) => {
                     country.label
                   )
                 ) {
-                  signUp();
+                 navigate("/guest-dashboard")
                 }
               }}
             >
@@ -145,6 +149,6 @@ const PageTwo = (props) => {
       </Container>
     </Page>
   );
-}
+};
 
-export default PageTwo
+export default PageTwo;

@@ -1,8 +1,8 @@
-import { 
-    ifEmpty, 
-    ifContainNumbers, 
-    ifOnlyContainsNumbers, 
-    ifEmail, ifLengthIsLessThan, 
+import {
+    ifEmpty,
+    ifContainNumbers,
+    ifOnlyContainsNumbers,
+    ifEmail, ifLengthIsLessThan,
     ifContainsUpperCase,
     ifContainsLowerCase,
     ifContainsSpecialCharacters,
@@ -86,7 +86,7 @@ export const passwordValidator = (setAlert, password) => {
             },
           });
     } else if (passwordLength ||
-        !passwordHasNumber || !passwordHasUpperCase || 
+        !passwordHasNumber || !passwordHasUpperCase ||
         !passwordHasLowerCase || !passwordHasSpecialCharacter) {
         setAlert({
             type: "SET_NOTIFICATION",
@@ -99,10 +99,10 @@ export const passwordValidator = (setAlert, password) => {
           });
     }
 
-    return !passwordEmpty && !passwordLength && 
-        passwordHasNumber && passwordHasUpperCase && 
+    return !passwordEmpty && !passwordLength &&
+        passwordHasNumber && passwordHasUpperCase &&
         passwordHasLowerCase && passwordHasSpecialCharacter
-} 
+}
 export const confirmPasswordValidator = (setAlert, confirmPassword, password) => {
     let confirmPasswordEmpty = ifEmpty(confirmPassword)
     let passwordsMatch = ifFieldValuesMatch(password, confirmPassword)
@@ -198,7 +198,7 @@ export const birthYearValidator = (setAlert, birthYear) => {
               borderColor: "redBorder",
             },
         });
-    } 
+    }
 
     return !birthYearEmpty && birthYearLength && birthYearHasNoLetters && birthYearGreaterThan18
 }
