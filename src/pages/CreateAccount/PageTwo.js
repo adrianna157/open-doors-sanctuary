@@ -6,7 +6,7 @@ import TextField from "../../components/TextField";
 import Page from "../../components/Page";
 import Container from "../../components/Container";
 import { useNavigate } from "react-router-dom";
-import DropDown from "../../components/DropDown";
+import DropDown from "../../components/Dropdown";
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
 import AlertHandler from "../../components/AlertHandler/index.js";
 

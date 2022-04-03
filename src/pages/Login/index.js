@@ -33,7 +33,7 @@ const Login = (props) => {
       });
       return;
     }
-    if (tempPassword.length > 8) {
+    if (tempPassword.length < 8) {
       setAlert({
         type: "SET_NOTIFICATION",
         payload: {
@@ -45,9 +45,12 @@ const Login = (props) => {
       });
       return;
     }
+    state.setAuthentification(true);
     if (tempEmail.split("@")[0].toLowerCase().includes("host")) {
+      state.setUserType("host");
       navigator("/dashboard");
     } else {
+      state.setUserType("guest");
       navigator("/list");
     }
   };
