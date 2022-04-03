@@ -6,7 +6,7 @@ import TextField from "../../components/TextField";
 import Page from "../../components/Page";
 import Container from "../../components/Container";
 import { useNavigate } from "react-router-dom";
-import DropDown from "../../components/DropDown";
+import DropDown from "../../components/Dropdown/index";
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
 import AlertHandler from "../../components/AlertHandler/index.js";
 
@@ -32,7 +32,7 @@ const PageTwo = (props) => {
   } = props;
 
   const stateDropDownConditionalRender = () => {
-    if (country.value === 'US') {
+    if (country.value === "US") {
       return (
         <DropDown
           USAStates
@@ -58,7 +58,11 @@ const PageTwo = (props) => {
         mariginTop="mt-24 lg:mt-h26pr"
       >
         <center>
-          <HeaderText noBold fontSize="text-4xl" className="pb-2pr text-[#a26360]">
+          <HeaderText
+            noBold
+            fontSize="text-4xl"
+            className="pb-2pr text-[#a26360]"
+          >
             Create an Account
           </HeaderText>
         </center>
@@ -138,7 +142,7 @@ const PageTwo = (props) => {
                     country.label
                   )
                 ) {
-                 navigate("/guest-dashboard")
+                  navigate("/guest-dashboard");
                 }
               }}
             >
