@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect, useRef } from "react";
-import { AmplifySignOut } from "@aws-amplify/ui-react";
 import NavBar from "../../components/NavBar";
 import Button from "../../components/Button"
 import Header_Logo from '../../assets/Images/guardian_group_logo.svg'
