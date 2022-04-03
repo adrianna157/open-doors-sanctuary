@@ -1,63 +1,73 @@
-import React, { useState, Fragment, useContext } from "react";
-import { Auth } from "aws-amplify";
+import React, { useState, useContext } from "react";
 import HeaderText from "../../components/HeaderText";
 import Button from "../../components/Button";
 import TextField from "../../components/TextField";
 import Container from "../../components/Container";
 import Page from "../../components/Page";
-import AuthHeader from "../../components/AuthHeader";
-import { AuthContext } from "../../helpers/AuthContext/AuthContext.js";
+import AuthContext from "../../auth/AuthProvider";
+import { useNavigate } from "react-router-dom";
 import AlertHandler from "../../components/AlertHandler";
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
 
 const Login = (props) => {
+  const navigator = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [state, dispatch] = useContext(AuthContext);
+  const state = useContext(AuthContext);
   const [alert, setAlert] = useContext(NotificationContext);
 
   const signIn = () => {
-    Auth.signIn({
-      username: email.toLowerCase(),
-      password,
-    })
-      .then((user) => {
-        dispatch({ type: "SET_USER", payload: user });
-        props.onStateChange("signedIn", {});
-        setEmail("");
-        setPassword("");
-      })
-      .catch((err) => {
-        setAlert({
-          type: "SET_NOTIFICATION",
-          payload: {
-            occurs: true,
-            message: err.message,
-            textColor: "redText",
-            borderColor: "redBorder",
-          },
-        });
+    const tempEmail = email;
+    setEmail("");
+    const tempPassword = password;
+    setPassword("");
+    if (!tempEmail.includes("@")) {
+      setAlert({
+        type: "SET_NOTIFICATION",
+        payload: {
+          occurs: true,
+          message: "Invalid Email!",
+          textColor: "redText",
+          borderColor: "redBorder",
+        },
       });
+      return;
+    }
+    if (tempPassword.length > 8) {
+      setAlert({
+        type: "SET_NOTIFICATION",
+        payload: {
+          occurs: true,
+          message: "Invalid Password!",
+          textColor: "redText",
+          borderColor: "redBorder",
+        },
+      });
+      return;
+    }
+    if (tempEmail.split("@")[0].toLowerCase().includes("host")) {
+      navigator("/dashboard");
+    } else {
+      navigator("/list");
+    }
   };
 
-  return props.authState === "signIn" ? (
+  return (
     <Page dontShowOverflow noLeftMargin>
       <AlertHandler />
-      <AuthHeader />
       <Container
-        grayedBackground
         height="md:h-[32rem] sm:h-1/6 lg:h-63pr"
         width="md:w-[32rem] sm:w-1/6 lg:w-1/3"
         padding="pt-3pr px-4pr sm:pl-2"
         className="flex flex-col"
         margin=" ml-16"
-        mariginTop="mt-24 lg:mt-h26pr"
+        mariginTop="mt-40 lg:mt-h26pr"
       >
-        <center>
+        <div className="text-center">
           <HeaderText noBold fontSize="text-4xl" className="pb-2pr">
             Log In
           </HeaderText>
-        </center>
+        </div>
         <div className="flex flex-col">
           <TextField
             type="text"
@@ -81,17 +91,13 @@ const Login = (props) => {
           <div className="flex justify-between mt-4">
             <Button
               anchorTag
-              onClick={() => {
-                props.onStateChange("signUp", {});
-              }}
+              onClick={() => navigator("/sign-up")}
             >
               Create Account
             </Button>
             <Button
               anchorTag
-              onClick={() => {
-                props.onStateChange("ForgotPassword");
-              }}
+              onClick={() => navigator("/restore-password")}
             >
               Forgot Password
             </Button>
@@ -99,8 +105,6 @@ const Login = (props) => {
         </div>
       </Container>
     </Page>
-  ) : (
-    <Fragment></Fragment>
   );
 };
 
