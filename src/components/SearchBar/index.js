@@ -1,6 +1,13 @@
+import { useState } from "react";
 import SearchIcon from "../../assets/svgs/search_icon.svg"
 
-const SearchBar = () => {
+const SearchBar = ({onClick}) => {
+  const [input, setInput] = useState('')
+
+  const sendToList = () => {
+    onClick(input);
+  }
+
   return (
     <div className="flex justify-center">
       <div className="mb-3 xl:w-96">
@@ -11,11 +18,13 @@ const SearchBar = () => {
             placeholder="Search by Location"
             aria-label="Search"
             aria-describedby="button-addon2"
+            onChange={(e) => setInput(e.target.value)}
           />
           <button
             className="btn inline-block px-6 py-2.5 bg-[#a26360] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-[#a26360] hover:shadow-lg focus:bg-[#a26360]  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center"
             type="button"
             id="button-addon2"
+            onClick={sendToList}
           >
             <svg
               aria-hidden="true"
