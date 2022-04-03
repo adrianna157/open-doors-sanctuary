@@ -93,6 +93,7 @@
   background-color: white;
   border: 0.7px solid #aeaeae;
   border-radius: 10px;
+  filter: none;
 }
 
 .close-in-preview {
