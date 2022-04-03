@@ -7,8 +7,10 @@ module.exports = {
           colors: {
               hacky: {
                   50: "#9daaa2",
-                  100: "#ced4d0"
-              }
+                  100: "#ced4d0",
+                  200: "#9dafa2"
+              },
+              secondary: "#a56865"
           }
       },
     },

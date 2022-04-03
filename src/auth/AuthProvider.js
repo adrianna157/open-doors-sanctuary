@@ -4,12 +4,12 @@ const AuthContext = createContext(null);
 
 function AuthProvider({ children }) {
     const [isAuthorized, setAuthentification] = useState(false);
-    const [userType, setUerType] = useState("");
+    const [userType, setUserType] = useState("");
     const value = {
         isAuthorized,
         setAuthentification,
         userType,
-        setUerType
+        setUserType
     }
 
     return (

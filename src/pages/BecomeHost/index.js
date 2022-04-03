@@ -1,10 +1,20 @@
-import { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { useNavigate, Navigate } from "react-router-dom";
 import AuthContext from "../../auth/AuthProvider";
+import RegForm from "../../components/REG_FORMS/index";
 
 export default function BecomeHost() {
     const auth = useContext(AuthContext);
     const navigate = useNavigate();
+    const [baseForm, setBaseForm] = useState({ status: null });
+
+    const setUser = (data) => {
+        console.log(data);
+        setBaseForm(data);
+        auth.setUserType(data.status);
+        auth.setAuthentification(true);
+    }
+
 
     useEffect(() => {
         if (auth.isAuthorized) {
@@ -13,17 +23,8 @@ export default function BecomeHost() {
     }, [auth.isAuthorized, navigate]);
 
     return (
-        <div className="min-h-screen bg-hacky-50 flex items-center justify-center flex-col">
-            <h1 className="text-white text-5xl mb-4">Create Host Account</h1>
-            <button
-                className="bg-white rounded-lg p-3"
-                onClick={() => {
-                    auth.setUerType("guest");
-                    auth.setAuthentification(true);
-                }}
-            >
-                Log In
-            </button>
+        <div className="grow bg-hacky-100 flex items-center justify-center flex-col">
+            <RegForm onFormFilled={setUser} />
         </div>
     );
 }

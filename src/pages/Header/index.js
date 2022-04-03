@@ -18,7 +18,7 @@ function Header() {
           <button>Language</button>
           {!auth.isAuthorized && (
             <>
-              <a href="/">Become a host</a>
+              <Link to="/sign-up">Become a host</Link>
               <Link to="/login">LogIn</Link>
             </>
           )}
