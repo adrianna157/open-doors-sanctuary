@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect, useRef } from "react";
 import { AmplifySignOut } from "@aws-amplify/ui-react";
 import NavBar from "../../components/NavBar";
 import Button from "../../components/Button"
-import Header_Logo from '../../assets/Images/guardian_group_logo.svg'
+import Header_Logo from '../../assets/open_doors_logo.svg'
 import Profile from '../../assets/Images/Profile.svg'
 import { AuthContext } from '../../helpers/AuthContext/AuthContext.js';
 import { Link, useNavigate } from "react-router-dom";
@@ -74,7 +74,9 @@ const LoggedInHeader = (props) => {
         }
       >
         <NavBar />
-        <Link to="/">
+        <Link
+          to="/"
+        >
           <center>
             <img className={
               "h-4pr my-h08pr absolute lg:static" +
