@@ -9,10 +9,9 @@ import { Authenticator } from "aws-amplify-react";
 import AuthStore from "./helpers/AuthContext/AuthContext.js";
 import AlertStore from "./helpers/AlertContext/AlertContext.js";
 import Dashboard from "./pages/Dashboard";
+import About from "./pages/About/index.js";
 import TitleScreen from "./pages/TitleScreen/index.js";
-import { BrowserRouter} from "react-router-dom";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const AuthStateApp = (props) => {
   return (
@@ -24,8 +23,12 @@ const AuthStateApp = (props) => {
           <CreateAccount override={"SignUp"} />
           <ConfirmAccount override={"ConfirmSignUp"} />
           <ForgotPassword override={"ForgotPassword"} /> */}
+
           <BrowserRouter>
-            <TitleScreen/>
+            <TitleScreen />
+            <Routes>
+              <Route path="/about" element={<About />}></Route>
+            </Routes>
           </BrowserRouter>
         </Authenticator>
       </AlertStore>
