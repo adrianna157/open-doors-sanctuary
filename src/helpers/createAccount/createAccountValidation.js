@@ -1,11 +1,9 @@
-import { 
-  nameValidator, 
-  emailValidator, 
-  passwordValidator, 
-  birthYearValidator, 
-  locationValidator,
+import {
+  nameValidator,
+  emailValidator,
+  passwordValidator,
+  birthYearValidator,
   confirmPasswordValidator,
-  countryValidator
 } from './fieldValidation.js'
 
 export const validatePageOne = (setAlert, firstName, lastName, email, password, confirmPassword) => {
@@ -18,10 +16,10 @@ export const validatePageOne = (setAlert, firstName, lastName, email, password, 
   return firstNameValidation && lastNameValidation && emailValidation && passwordValidation && confirmPasswordValidation
 }
 
-export const validatePageTwo = (setAlert, birthYear, location, agreeToTerms, country, countryName) => {
+export const validatePageTwo = (setAlert, birthYear, location, agreeToTerms) => {
   let birthYearValidation = birthYearValidator(setAlert, birthYear)
-  let locationValidation = locationValidator(setAlert, location)
-  let countryValidation = countryValidator(setAlert, country, countryName)
+
+
 
   if (!agreeToTerms) {
     setAlert({
@@ -35,5 +33,5 @@ export const validatePageTwo = (setAlert, birthYear, location, agreeToTerms, cou
   });
   }
 
-  return birthYearValidation && locationValidation && agreeToTerms && countryValidation
+  return birthYearValidation && agreeToTerms
 }

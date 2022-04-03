@@ -5,7 +5,6 @@ import Button from '../../components/Button'
 import TextField from '../../components/TextField'
 import Container from '../../components/Container';
 import Page from '../../components/Page';
-import AuthHeader from "../../components/AuthHeader";
 import { passwordValidator, confirmPasswordValidator } from '../../helpers/createAccount/fieldValidation.js'
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
 import AlertHandler from "../../components/AlertHandler";
@@ -32,7 +31,7 @@ const ForgotPassword = (props) => {
     } else {
       Auth.forgotPassword(email).then((data) => {
         setRenderedCode(true)
-      }).catch((err) => { 
+      }).catch((err) => {
         setAlert({
           type: "SET_NOTIFICATION",
           payload: {
@@ -131,7 +130,6 @@ const ForgotPassword = (props) => {
   return props.authState === "ForgotPassword" ? (
     <Page noLeftMargin>
       <AlertHandler />
-      <AuthHeader />
       <Container
         grayedBackground
         height="h-91pr lg:h-63pr"

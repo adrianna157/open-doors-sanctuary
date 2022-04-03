@@ -5,14 +5,14 @@ import Button from '../../components/Button'
 import TextField from '../../components/TextField'
 import Page from '../../components/Page'
 import Container from '../../components/Container'
-import AuthHeader from '../../components/AuthHeader'
+import { useNavigate } from "react-router-dom"
 import { NotificationContext } from "../../helpers/AlertContext/AlertContext.js";
 import AlertHandler from "../../components/AlertHandler/index.js"
 
 
 const PageOne = (props) => {
   const [alert, setAlert] = useContext(NotificationContext);
-
+  let navigate = useNavigate();
   let {
     firstName, setFirstName,
     lastName, setLastName,
@@ -25,7 +25,6 @@ const PageOne = (props) => {
   return (
     <Page noLeftMargin>
       <AlertHandler />
-      <AuthHeader />
       <Container
         grayedBackground
         height="md:h-[32rem] sm:h-1/6 lg:h-63pr"
@@ -88,7 +87,7 @@ const PageOne = (props) => {
               noPadding
               className="w-20pr lg:w-6pr"
               onClick={() => {
-                props.onStateChange("signIn", {});
+                navigate(-1);
               }}
             >
               CANCEL
@@ -125,7 +124,7 @@ const PageOne = (props) => {
                 setEmail("");
                 setPassword("");
                 setConfirmPassword("");
-                props.onStateChange("signIn", {});
+                 navigate(-1);
               }}
             >
               Click Here
