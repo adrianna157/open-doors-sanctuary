@@ -17,7 +17,7 @@ export default function TitleScreen () {
     }, [auth.isAuthorized, navigate, auth.userType]);
     return (
         <>
-            <section className={`bg-hacky-50 md:h-auto h-screen`}>
+            <section className={`bg-hacky-50 md:h-auto md:grow-0 grow md:block flex items-center`}>
                 <div className="container h-full mx-auto">
                     <div className="flex items-center md:items-end justify-around h-full md:h-auto">
                         <img width="480" className="max-w-screen-sm translate-y-1/4 rounded-3xl border-2 hidden md:block border-black" alt="" src={door} />
