@@ -16,6 +16,7 @@ import GuestList from "./pages/GuestList";
 import CreateAccount from "./pages/CreateAccount";
 import GuestDashboard from "./pages/GuestDashboard";
 import ForgotPassword from "./pages/ForgotPassword";
+import RequiredVerification from "./pages/RequiredVerification";
 
 const AuthStateApp = (props) => {
   return (
@@ -33,9 +34,10 @@ const AuthStateApp = (props) => {
                 />
                 <Route
                   path="restore-password"
-                  element={<ForgotPassword authState="ForgotPassword"/>}
+                  element={<ForgotPassword authState="ForgotPassword" />}
                 />
                 {/* <Route path="sign-up" element={<BecomeHost />} /> */}
+                <Route path="required-verification" element={<RequiredVerification />} />
                 <Route path="guest-dashboard" element={<GuestDashboard />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="guest-list" element={<GuestList />} />
