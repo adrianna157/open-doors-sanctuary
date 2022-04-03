@@ -1,12 +1,17 @@
 import React from "react";
 import { Authenticator } from "aws-amplify-react";
-import Login from "./pages/Login";
-import SignedIn from "./pages/SignedIn";
-import CreateAccount from "./pages/CreateAccount";
-import ConfirmAccount from "./pages/ConfirmAccount";
+// TODO : When Authh is Implemented, Use these pages
+// import Login from "./pages/Login";
+// import SignedIn from "./pages/SignedIn";
+// import CreateAccount from "./pages/CreateAccount";
+// import ConfirmAccount from "./pages/ConfirmAccount";
+// import ForgotPassword from "./pages/ForgotPassword";
 import AuthStore from "./helpers/AuthContext/AuthContext.js";
 import AlertStore from "./helpers/AlertContext/AlertContext.js";
-import ForgotPassword from "./pages/ForgotPassword";
+import Dashboard from "./pages/Dashboard";
+import TitleScreen from "./pages/TitleScreen/index.js";
+import { BrowserRouter} from "react-router-dom";
+
 
 
 const AuthStateApp = (props) => {
@@ -19,10 +24,12 @@ const AuthStateApp = (props) => {
           <CreateAccount override={"SignUp"} />
           <ConfirmAccount override={"ConfirmSignUp"} />
           <ForgotPassword override={"ForgotPassword"} /> */}
+          <BrowserRouter>
+            <TitleScreen/>
+          </BrowserRouter>
         </Authenticator>
       </AlertStore>
     </AuthStore>
-
 
     // Andrii's Code
 
