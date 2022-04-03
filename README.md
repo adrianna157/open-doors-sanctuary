@@ -8,3 +8,5 @@ The idea is to create a web app (desktop and mobile) that will allow fleeing Ukr
 # Amplify Team Workflow
 
 look at links in Team Run Book
+
+# Generating a production build...
