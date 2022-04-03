@@ -8,7 +8,7 @@ const HeaderText = (props) => {
   return (
     <div
       className={
-        "mb-2 text-[#a26360] font-display" + bold + fontSize + className
+        "mb-2 font-display" + bold + fontSize + className
       }
     >
       {props.children}

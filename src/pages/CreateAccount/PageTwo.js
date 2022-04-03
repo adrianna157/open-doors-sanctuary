@@ -58,7 +58,7 @@ const PageTwo = (props) => {
         mariginTop="mt-24 lg:mt-h26pr"
       >
         <center>
-          <HeaderText noBold fontSize="text-4xl" className="pb-2pr">
+          <HeaderText noBold fontSize="text-4xl" className="pb-2pr text-[#a26360]">
             Create an Account
           </HeaderText>
         </center>
@@ -138,7 +138,7 @@ const PageTwo = (props) => {
                     country.label
                   )
                 ) {
-                 navigate("/dashboard")
+                 navigate("/guest-dashboard")
                 }
               }}
             >

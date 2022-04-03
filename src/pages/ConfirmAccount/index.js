@@ -114,7 +114,7 @@ const ConfirmAccount = (props) => {
         margin="mx-auto"
         mariginTop="mt-h8pr lg:mt-h26pr"
       >
-        <center><HeaderText noBold fontSize="text-4xl" className="pb-2pr">Confirm Sign Up</HeaderText></center>
+        <center><HeaderText noBold fontSize="text-4xl" className="pb-2pr text-[#a26360]">Confirm Sign Up</HeaderText></center>
         <TextField
           type="code"
           value={code}

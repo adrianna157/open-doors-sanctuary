@@ -19,7 +19,7 @@ class TermsOfUse extends Component {
           mariginTop="mt-h8pr lg:mt-h26pr"
         >
           <center>
-            <HeaderText noBold fontSize="text-4xl" className="mt-2pr mb-3pr">
+            <HeaderText noBold fontSize="text-4xl text-[#a26360]" className="mt-2pr mb-3pr">
               Terms of Use
             </HeaderText>
           </center>

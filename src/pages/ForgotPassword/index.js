@@ -139,7 +139,7 @@ const ForgotPassword = (props) => {
         margin="mx-auto"
         mariginTop="mt-h8pr lg:mt-h26pr"
       >
-        <center><HeaderText noBold fontSize="text-4xl" className="pb-2pr">Forgot Password</HeaderText></center>
+        <center><HeaderText noBold fontSize="text-4xl text-[#a26360]" className="pb-2pr">Forgot Password</HeaderText></center>
         {renderCode()}
         {renderEmail()}
       </Container>
