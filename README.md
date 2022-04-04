@@ -8,16 +8,16 @@ The idea is to create a web app (desktop and mobile) that will allow fleeing Ukr
 
 # Amplify Team Workflow
 
-look at links in Team Run Book 
+## look at links in Team Run Book 
 https://spring-shop-9ab.notion.site/Open-Doors-Sanctuary-Run-Book-a5c68713266d40ebb09524e8a41abff2
 
 # Key Contributors
 
-Adrianna Guevarra
-Padgy Soltis
-Alex Rivard
-Michael Ocasio
-Andrii Kapynos
-Dmytro Omelian
-James Maye
-Becky Richardson
+- Adrianna Guevarra
+- Padgy Soltis
+- Alex Rivard
+- Michael Ocasio
+- Andrii Kapynos
+- Dmytro Omelian
+- James Maye
+- Becky Richardson
