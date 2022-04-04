@@ -4,9 +4,20 @@ The idea is to create a web app (desktop and mobile) that will allow fleeing Ukr
 # Getting Started
 1) Run npm i
 2) Run npm run start to start server and hot reloading
+3) Run amplify pull to pull latest backend environment if no environment has been setup do an amplify init and then an amplify configure
 
 # Amplify Team Workflow
 
-look at links in Team Run Book
+look at links in Team Run Book 
+https://spring-shop-9ab.notion.site/Open-Doors-Sanctuary-Run-Book-a5c68713266d40ebb09524e8a41abff2
 
-# Generating a production build...
+# Key Contributors
+
+Adrianna Guevarra
+Padgy Soltis
+Alex Rivard
+Michael Ocasio
+Andrii Kapynos
+Dmytro Omelian
+James Maye
+Becky Richardson
